@@ -1,22 +1,144 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_gravity="center"
+    android:orientation="vertical"
+
     tools:context=".MainActivity">
 
   <TextView
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
       android:textSize="20sp"
-      android:gravity="center"
+    android:gravity="center"
       android:layout_marginTop="30dp"
-      android:text="dinesh prajapati"
+      android:text="*****************"
       android:textColor="@color/purple_700"
       >
 
   </TextView>
 
-</RelativeLayout>
+  <com.google.android.material.textfield.TextInputLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:hint="Enter user name"
+      android:layout_margin="15dp"
+      app:hintTextColor="@color/purple_700"
+      style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+      app:boxStrokeColor="@color/purple_700"
+      app:hintAnimationEnabled="true"
+      app:endIconMode="clear_text"
+      >
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/sinname"
+        android:textColor="@color/purple_700"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+
+  </com.google.android.material.textfield.TextInputLayout>
+
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="20sp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="30dp"
+      android:text="Gender"
+      android:textColor="@color/purple_700"
+      >
+
+  </TextView>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+
+      >
+  <RadioGroup
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+        <RadioButton
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="male">
+        </RadioButton>
+
+        <RadioButton
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="female">
+        </RadioButton>
+  </RadioGroup>
+
+
+  </LinearLayout>
+  <TextView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:textSize="20sp"
+      android:layout_marginLeft="10dp"
+      android:layout_marginTop="30dp"
+      android:text="language"
+      android:textColor="@color/purple_700"
+      ></TextView>
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:layout_marginLeft="10dp"
+      android:layout_marginRight="10dp"
+      >
+
+
+      <com.google.android.material.checkbox.MaterialCheckBox
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+         android:text="PHP"
+          >
+
+      </com.google.android.material.checkbox.MaterialCheckBox>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="C"
+        >
+
+    </com.google.android.material.checkbox.MaterialCheckBox>
+
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android"
+        >
+
+    </com.google.android.material.checkbox.MaterialCheckBox>
+    <com.google.android.material.checkbox.MaterialCheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="java"
+        >
+
+    </com.google.android.material.checkbox.MaterialCheckBox>
+
+
+
+  </LinearLayout>
+  <ImageView
+      android:layout_width="200dp"
+      android:layout_height="200dp"
+      android:src="@drawable/sd"
+      >
+
+  </ImageView>
+</LinearLayout>
